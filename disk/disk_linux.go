@@ -332,7 +332,7 @@ func getFileSystems() ([]string, error) {
 	}
 	var ret []string
 	for _, line := range lines {
-		if !strings.HasPrefix(line, "nodev") {
+		if !strings.HasPrefix(line, "nodev") && !strings.Contains(line, "squashfs") {
 			ret = append(ret, strings.TrimSpace(line))
 			continue
 		}
