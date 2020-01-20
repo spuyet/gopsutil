@@ -42,7 +42,7 @@ func TimesWithContext(ctx context.Context, percpu bool) ([]TimesStat, error) {
 		if err != nil || len(statlines) < 2 {
 			return []TimesStat{}, nil
 		}
-		for _, line := range statlines[1:] {
+		for _, line := range statlines {
 			if !strings.HasPrefix(line, "cpu") {
 				break
 			}
