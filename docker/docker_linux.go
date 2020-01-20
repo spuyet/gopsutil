@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	cpu "github.com/shirou/gopsutil/cpu"
-	"github.com/shirou/gopsutil/internal/common"
+	cpu "github.com/spuyet/gopsutil/cpu"
+	"github.com/spuyet/gopsutil/internal/common"
 )
 
 // GetDockerStat returns a list of Docker basic stats.
